@@ -1,0 +1,23 @@
+# Godot
+.godot/
+*.translation
+
+# Imports
+client/godot/.godot/
+client/godot/imported/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+
+# Local tool downloads
+tools/downloads/
+tools/godot/

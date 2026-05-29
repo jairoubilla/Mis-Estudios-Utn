@@ -1,0 +1,13 @@
+{
+  "title": "Demo - Ajusta esta letra",
+  "lines": [
+    "[Intro]",
+    "Esta es la primera linea que puedes reemplazar",
+    "La segunda linea queda centrada cuando la detecta",
+    "(Bis)",
+    "Si la IA se pierde, corrige con la flecha hacia abajo",
+    "Y vuelve a subir con la flecha hacia arriba",
+    "[Final]",
+    "Carga tu propio archivo txt o json para usarlo en vivo"
+  ]
+}

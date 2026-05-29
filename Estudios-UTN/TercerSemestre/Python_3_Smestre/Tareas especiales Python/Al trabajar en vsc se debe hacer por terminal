@@ -1,0 +1,23 @@
+Al trabajar en vsc se debe hacer por terminal
+
+1. Crear el entorno virtual:
+python -m venv venv  -> esto para window
+python3 -m venv venv -> esto para linux
+
+2. Activar el entorno virtual desde la terminal
+source venv/bin/activate -> esto para linux
+venv/scripts/activate -> esto en window
+
+3. Desactivar el entorno virtual
+Tarea enviar a mi correo institucional:
+¿Como se desativa el entorno virtual desde la terminal? 
+¿Cual es el comando?
+
+El entorno virtual en window o en linux se desactiva con el comando "deactivate"
+
+4. Enviar respuesta junto con la anterior:
+¿Que es el DOM?
+
+El DOM (Document Object Model o Modelo de Objetos del Documento) es el puente que permite que lenguajes como JavaScript "hablen" con el contenido, la estructura y el estilo de una página web.
+Sin el DOM, las páginas web serían estáticas. Gracias a él, se puede usar JavaScript para cambiar el contenido, escribir texto nuevo en un elemento, modificar estilos, añadir o quitar elementos, crear nuevos botones, borrar imágenes o mover secciones enteras de la página.
+Tambien permite reaccionar a eventos: Detectar cuando el usuario hace scroll, pulsa una tecla o mueve el ratón.

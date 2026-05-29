@@ -1,0 +1,109 @@
+
+  /*PALETA DE COLORES: NEGRO, ROJO, GRIS*/
+:root {
+  /* Colores Base */
+  --palette-red-primary: #ff3b3f;    /* Rojo vibrante para destacar */
+  --palette-red-soft: #d32f2f;       /* Rojo más oscuro para hover */
+  
+  --palette-black-main: #121212;     /* Negro profundo para fondo principal */
+  --palette-black-secondary: #1e1e1e;/* Gris muy oscuro para secciones/tarjetas */
+  
+  --palette-grey-light: #e0e0e0;     /* Gris claro para texto principal */
+  --palette-grey-mute: #a0a0a0;      /* Gris apagado para textos secundarios */
+  --palette-white: #ffffff;          /* Blanco puro para títulos importantes */
+
+  /* Mapeo Semántico (Variables que usa tu app) */
+  --color-background: var(--palette-black-main);
+  --color-background-soft: var(--palette-black-secondary);
+  --color-background-mute: var(--palette-black-secondary);
+
+  --color-border: #333333;           /* Borde sutil oscuro */
+  --color-border-hover: var(--palette-red-primary); /* Borde rojo al pasar el mouse */
+
+  --color-heading: var(--palette-white);      /* Títulos en blanco para máximo contraste */
+  --color-text: var(--palette-grey-light);    /* Texto general en gris claro para no cansar la vista */
+  --color-accent: var(--palette-red-primary); /* Nuevo: color de acento para enlaces o detalles */
+
+  --section-gap: 160px;
+}
+
+/* 
+  RESET Y ESTILOS BASE*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent); /* Enlaces en rojo por defecto */
+  transition: 0.4s;
+}
+
+a:hover {
+  color: var(--palette-white); /* Efecto hover para enlaces */
+}
+
+/* 
+  ESTILOS DE SECCIONE*/
+section {
+  padding: 2rem;
+  border-bottom: 1px solid var(--color-border);
+  margin: 3rem 0rem 2rem 0rem;
+  /*Opcional: fondo ligeramente diferente para cada sección para dar profundidad */
+  background-color: var(--color-background-soft); 
+  border-radius: 12px; 
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--color-heading); /* Títulos H2 en blanco */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold; /* Un poco más de peso para que destaque en el fondo negro */
+}
+
+section h3 {
+  font-size: 1.5rem;
+  color: var(--color-accent); /* Títulos H3 en ROJO */
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Opcional: Si quieres mantener un modo claro alternativo, 
+   descomenta y ajusta esto. Si solo quieres modo oscuro, déjalo así. */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: #ffffff;
+    --color-background-soft: #f8f8f8;
+    --color-text: #333333;
+    --color-heading: #000000;
+    --color-border: #e0e0e0;
+    /* El rojo sigue siendo el acento */
+  }
+}

@@ -1,0 +1,5 @@
+numpy
+sounddevice
+PyQt6
+faster-whisper
+rapidfuzz

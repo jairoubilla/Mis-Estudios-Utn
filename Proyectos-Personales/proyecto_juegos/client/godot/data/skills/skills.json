@@ -1,0 +1,60 @@
+{
+  "skills": [
+    {
+      "id": "skill_berserker_cleave",
+      "class": "berserker",
+      "name": "Cleave",
+      "type": "melee_area",
+      "cooldown_seconds": 4,
+      "resource_cost": 10,
+      "range_meters": 3.2,
+      "damage_multiplier": 1.2,
+      "pvp_multiplier": 0.85
+    },
+    {
+      "id": "skill_swordsman_guard_counter",
+      "class": "swordsman",
+      "name": "Guard Counter",
+      "type": "counter",
+      "cooldown_seconds": 8,
+      "resource_cost": 15,
+      "range_meters": 2.8,
+      "damage_multiplier": 1.0,
+      "pvp_multiplier": 0.9
+    },
+    {
+      "id": "skill_archer_piercing_shot",
+      "class": "archer",
+      "name": "Piercing Shot",
+      "type": "ranged_line",
+      "cooldown_seconds": 6,
+      "resource_cost": 12,
+      "range_meters": 18,
+      "damage_multiplier": 1.35,
+      "pvp_multiplier": 0.85
+    },
+    {
+      "id": "skill_mage_fireball",
+      "class": "mage",
+      "name": "Fireball",
+      "type": "ranged_area",
+      "cooldown_seconds": 6,
+      "resource_cost": 20,
+      "range_meters": 16,
+      "damage_multiplier": 1.4,
+      "pvp_multiplier": 0.8
+    },
+    {
+      "id": "skill_assassin_shadow_step",
+      "class": "assassin",
+      "name": "Shadow Step",
+      "type": "gap_closer",
+      "cooldown_seconds": 10,
+      "resource_cost": 18,
+      "range_meters": 10,
+      "damage_multiplier": 1.15,
+      "pvp_multiplier": 0.85
+    }
+  ]
+}
+

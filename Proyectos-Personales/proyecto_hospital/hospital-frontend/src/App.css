@@ -1,0 +1,205 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.splash-pantalla {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: #000;
+  display: flex; justify-content: center; align-items: center;
+  z-index: 9999; /* Para que esté arriba de todo */
+  transition: opacity 1s ease-out;
+}
+
+.splash-texto {
+  color: #4CAF50;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+@keyframes pulso {
+  0% { opacity: 0.5; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0.5; transform: scale(0.95); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #4CAF50; }
+  to { text-shadow: 0 0 20px #4CAF50, 0 0 30px #4CAF50; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes expandWidth {
+  from { width: 0; }
+  to { width: 200px; }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+@keyframes pulseBar {
+  0%, 100% { opacity: 0.7; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.2); }
+}
+
+@keyframes glowCard {
+  from { box-shadow: 0 20px 40px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.1); }
+  to { box-shadow: 0 20px 40px rgba(76,175,80,0.3), inset 0 1px 0 rgba(255,255,255,0.1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes colorChange {
+  0%, 100% { color: #fff; }
+  25% { color: #4CAF50; }
+  50% { color: #66BB6A; }
+  75% { color: #4CAF50; }
+}
+
+@keyframes rainbow {
+  0% { background: linear-gradient(90deg, #4CAF50, #66BB6A, #4CAF50, #66BB6A); }
+  25% { background: linear-gradient(90deg, #66BB6A, #4CAF50, #66BB6A, #4CAF50); }
+  50% { background: linear-gradient(90deg, #4CAF50, #66BB6A, #4CAF50, #66BB6A); }
+  75% { background: linear-gradient(90deg, #66BB6A, #4CAF50, #66BB6A, #4CAF50); }
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+@keyframes moveParticles {
+  0% { background-position: 0 0, 0 0, 0 0; }
+  100% { background-position: 100px 100px, 150px 150px, 200px 200px; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes buttonPulse {
+  0%, 100% { box-shadow: 0 10px 25px rgba(76,175,80,0.5); }
+  50% { box-shadow: 0 10px 25px rgba(76,175,80,0.8); }
+}
+
+@keyframes textGlow {
+  from { text-shadow: 0 0 15px #4CAF50; }
+  to { text-shadow: 0 0 25px #4CAF50, 0 0 35px #4CAF50; }
+}
+
+@keyframes colorShift {
+  0%, 100% { color: #ddd; }
+  25% { color: #4CAF50; }
+  50% { color: #66BB6A; }
+  75% { color: #4CAF50; }
+}
+
+@keyframes rotateIcon {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
