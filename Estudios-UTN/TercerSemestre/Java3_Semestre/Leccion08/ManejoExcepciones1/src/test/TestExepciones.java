@@ -46,7 +46,7 @@ public class TestExepciones {
         // 8.6 Agregamos el finally y catch
         try {
             resultado = 10 / 0;
-        } catch (OperacionExepcion e) {
+        } catch (OperacionExcepcion e) {
             System.out.println("Ocurrio un error de tipo OperacionExepcion");
             System.out.println(e.getMessage());
         } catch (Exception e) {
