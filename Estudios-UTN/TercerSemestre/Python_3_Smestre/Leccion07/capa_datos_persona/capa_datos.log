@@ -159,3 +159,328 @@
             Email: None
         
 08:40:04 AM:DEBUG [persona_dao.py:79] Personas eliminadas: 1
+07:56:17 PM:DEBUG [conexion.py:73] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001469534C2F0>
+07:56:17 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x0000014695274370; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:06:43 PM:DEBUG [conexion.py:73] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001DAF314C2F0>
+08:06:43 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001DAF3084370; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:06:43 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001DAF3084260; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:10:27 PM:DEBUG [conexion.py:73] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000002F61A45C1A0>
+08:10:27 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000002F61A384370; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:10:27 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000002F61A384260; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:10:28 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000002F61A385140; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:10:28 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000002F61A387BC0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:10:28 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000002F61A387CD0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:30:15 PM:DEBUG [conexion.py:73] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001CA23EF02F0>
+08:30:15 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001CA23E24480; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:30:15 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x000001CA23E24480; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:30:15 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001CA23E24480; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:30:16 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001CA23E24370; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:30:16 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001CA23E25250; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:30:16 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001CA23E27CD0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:DEBUG [conexion.py:73] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000204BC8E02F0>
+08:32:22 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x00000204BC814480; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x00000204BC814480; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x00000204BC814480; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x00000204BC814480; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x00000204BC814480; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x00000204BC814480; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x00000204BC814480; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x00000204BC814370; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:32:22 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x00000204BC815250; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+09:36:22 PM:DEBUG [cursor_del_pool.py:12] Inicio del metodo with y __enter__
+09:36:22 PM:DEBUG [conexion.py:73] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000026EE16D01A0>
+09:36:22 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x0000026EDF90D360; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+09:36:22 PM:DEBUG [cursor_del_pool.py:34] Dentro del bloque with
+09:36:22 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el metodo exit
+09:36:22 PM:DEBUG [cursor_del_pool.py:24] Ocurrió una exception: 'psycopg2.extensions.cursor' object has no attribute 'fetchal'
+09:36:22 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x0000026EDF90D360; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+09:38:23 PM:DEBUG [cursor_del_pool.py:12] Inicio del metodo with y __enter__
+09:38:23 PM:DEBUG [conexion.py:73] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001BC1BA101A0>
+09:38:23 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001BC1B24D360; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+09:38:23 PM:DEBUG [cursor_del_pool.py:34] Dentro del bloque with
+09:38:23 PM:DEBUG [cursor_del_pool.py:36] [(2, 'Tito', 'Olate', 'tolate@gmail.com'), (10, 'Jorge', 'Rolo', 'jrolo@gmail.com'), (8, 'Rowi', 'Costa', 'rcosts@gmail.com'), (15, 'Nair', 'Contreras', 'cnair@gmail.com'), (18, 'Nico', 'Conte', 'cnico@gmail.com'), (19, 'Nicol', 'Contes', 'cnicol@gmail.com'), (20, 'Nicol', 'Contes', 'cnicol@gmail.com'), (24, 'Omero', 'Ramos', 'omeror@gmail.com'), (25, 'Nicol', 'Contes', 'cnicol@gmail.com'), (1, 'Juli', 'Lava', 'jlava@gmail.com')]
+09:38:23 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el metodo exit
+09:38:23 PM:DEBUG [cursor_del_pool.py:27] Commit de la transaccion
+09:38:23 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x000001BC1B24D360; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:21:25 PM:DEBUG [cursor_del_pool.py:12] Inicio del metodo with y __enter__
+10:21:26 PM:DEBUG [conexion.py:73] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001E8B4F60590>
+10:21:26 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001E8B3748BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:21:26 PM:DEBUG [persona_dao.py:82] Los objetos eliminados son: 
+            Id Persona: 23,
+            Nombre: None,
+            Apellido: None,
+            Email: None
+        
+10:21:26 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el metodo exit
+10:21:26 PM:DEBUG [cursor_del_pool.py:27] Commit de la transaccion
+10:21:26 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x000001E8B3748BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:21:26 PM:DEBUG [persona_dao.py:92] Personas eliminadas: 0
+10:21:26 PM:DEBUG [cursor_del_pool.py:12] Inicio del metodo with y __enter__
+10:21:26 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001E8B3748BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:21:26 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el metodo exit
+10:21:26 PM:DEBUG [cursor_del_pool.py:27] Commit de la transaccion
+10:21:26 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x000001E8B3748BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:21:26 PM:DEBUG [persona_dao.py:106] 
+            Id Persona: 1,
+            Nombre: Juli,
+            Apellido: Lava,
+            Email: jlava@gmail.com
+        
+10:21:26 PM:DEBUG [persona_dao.py:106] 
+            Id Persona: 2,
+            Nombre: Tito,
+            Apellido: Olate,
+            Email: tolate@gmail.com
+        
+10:21:26 PM:DEBUG [persona_dao.py:106] 
+            Id Persona: 8,
+            Nombre: Rowi,
+            Apellido: Costa,
+            Email: rcosts@gmail.com
+        
+10:21:26 PM:DEBUG [persona_dao.py:106] 
+            Id Persona: 10,
+            Nombre: Jorge,
+            Apellido: Rolo,
+            Email: jrolo@gmail.com
+        
+10:21:26 PM:DEBUG [persona_dao.py:106] 
+            Id Persona: 15,
+            Nombre: Nair,
+            Apellido: Contreras,
+            Email: cnair@gmail.com
+        
+10:21:26 PM:DEBUG [persona_dao.py:106] 
+            Id Persona: 18,
+            Nombre: Nico,
+            Apellido: Conte,
+            Email: cnico@gmail.com
+        
+10:21:26 PM:DEBUG [persona_dao.py:106] 
+            Id Persona: 19,
+            Nombre: Nicol,
+            Apellido: Contes,
+            Email: cnicol@gmail.com
+        
+10:21:26 PM:DEBUG [persona_dao.py:106] 
+            Id Persona: 20,
+            Nombre: Nicol,
+            Apellido: Contes,
+            Email: cnicol@gmail.com
+        
+10:21:26 PM:DEBUG [persona_dao.py:106] 
+            Id Persona: 24,
+            Nombre: Omero,
+            Apellido: Ramos,
+            Email: omeror@gmail.com
+        
+10:21:26 PM:DEBUG [persona_dao.py:106] 
+            Id Persona: 25,
+            Nombre: Nicol,
+            Apellido: Contes,
+            Email: cnicol@gmail.com
+        
+10:27:07 PM:DEBUG [cursor_del_pool.py:12] Inicio del metodo with y __enter__
+10:27:07 PM:DEBUG [conexion.py:73] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001BB64F80590>
+10:27:07 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001BB63718BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:27:07 PM:DEBUG [persona_dao.py:82] Los objetos eliminados son: 
+            Id Persona: 23,
+            Nombre: None,
+            Apellido: None,
+            Email: None
+        
+10:27:07 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el metodo exit
+10:27:07 PM:DEBUG [cursor_del_pool.py:27] Commit de la transaccion
+10:27:07 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x000001BB63718BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:27:07 PM:DEBUG [persona_dao.py:92] Personas eliminadas: 0
+10:27:07 PM:DEBUG [cursor_del_pool.py:12] Inicio del metodo with y __enter__
+10:27:07 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001BB63718BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:27:07 PM:DEBUG [persona_dao.py:62] Persona Insertada: 
+            Id Persona: None,
+            Nombre: Marcos,
+            Apellido: Tejada,
+            Email: tejadam@gmail.com
+        
+10:27:07 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el metodo exit
+10:27:07 PM:DEBUG [cursor_del_pool.py:27] Commit de la transaccion
+10:27:07 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x000001BB63718BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:27:07 PM:DEBUG [persona_dao.py:103] Personas insertadas: 1
+10:27:07 PM:DEBUG [cursor_del_pool.py:12] Inicio del metodo with y __enter__
+10:27:07 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x000001BB63718BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:27:07 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el metodo exit
+10:27:07 PM:DEBUG [cursor_del_pool.py:27] Commit de la transaccion
+10:27:07 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x000001BB63718BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:27:07 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 1,
+            Nombre: Juli,
+            Apellido: Lava,
+            Email: jlava@gmail.com
+        
+10:27:07 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 2,
+            Nombre: Tito,
+            Apellido: Olate,
+            Email: tolate@gmail.com
+        
+10:27:07 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 8,
+            Nombre: Rowi,
+            Apellido: Costa,
+            Email: rcosts@gmail.com
+        
+10:27:07 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 10,
+            Nombre: Jorge,
+            Apellido: Rolo,
+            Email: jrolo@gmail.com
+        
+10:27:07 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 15,
+            Nombre: Nair,
+            Apellido: Contreras,
+            Email: cnair@gmail.com
+        
+10:27:07 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 18,
+            Nombre: Nico,
+            Apellido: Conte,
+            Email: cnico@gmail.com
+        
+10:27:07 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 19,
+            Nombre: Nicol,
+            Apellido: Contes,
+            Email: cnicol@gmail.com
+        
+10:27:07 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 20,
+            Nombre: Nicol,
+            Apellido: Contes,
+            Email: cnicol@gmail.com
+        
+10:27:07 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 24,
+            Nombre: Omero,
+            Apellido: Ramos,
+            Email: omeror@gmail.com
+        
+10:27:07 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 25,
+            Nombre: Nicol,
+            Apellido: Contes,
+            Email: cnicol@gmail.com
+        
+10:27:07 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 26,
+            Nombre: Marcos,
+            Apellido: Tejada,
+            Email: tejadam@gmail.com
+        
+10:34:31 PM:DEBUG [cursor_del_pool.py:12] Inicio del metodo with y __enter__
+10:34:31 PM:DEBUG [conexion.py:73] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000292E0DE0590>
+10:34:31 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x00000292DF598BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:34:31 PM:DEBUG [persona_dao.py:82] Los objetos eliminados son: 
+            Id Persona: 26,
+            Nombre: None,
+            Apellido: None,
+            Email: None
+        
+10:34:31 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el metodo exit
+10:34:31 PM:DEBUG [cursor_del_pool.py:27] Commit de la transaccion
+10:34:31 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x00000292DF598BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:34:31 PM:DEBUG [persona_dao.py:92] Personas eliminadas: 1
+10:34:31 PM:DEBUG [cursor_del_pool.py:12] Inicio del metodo with y __enter__
+10:34:31 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x00000292DF598BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:34:31 PM:DEBUG [persona_dao.py:72] Persona actualizada: 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellido: Pena,
+            Email: jpena@gmail.com
+        
+10:34:31 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el metodo exit
+10:34:31 PM:DEBUG [cursor_del_pool.py:27] Commit de la transaccion
+10:34:31 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x00000292DF598BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:34:31 PM:DEBUG [persona_dao.py:96] Personas actualizadas: 1
+10:34:31 PM:DEBUG [cursor_del_pool.py:12] Inicio del metodo with y __enter__
+10:34:31 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x00000292DF598BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:34:31 PM:DEBUG [persona_dao.py:62] Persona Insertada: 
+            Id Persona: None,
+            Nombre: Mateo,
+            Apellido: Torres,
+            Email: torresm@gmail.com
+        
+10:34:31 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el metodo exit
+10:34:31 PM:DEBUG [cursor_del_pool.py:27] Commit de la transaccion
+10:34:31 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x00000292DF598BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:34:31 PM:DEBUG [persona_dao.py:103] Personas insertadas: 1
+10:34:31 PM:DEBUG [cursor_del_pool.py:12] Inicio del metodo with y __enter__
+10:34:31 PM:DEBUG [conexion.py:41] Conexion obtenida del pool: <connection object at 0x00000292DF598BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:34:31 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el metodo exit
+10:34:31 PM:DEBUG [cursor_del_pool.py:27] Commit de la transaccion
+10:34:31 PM:DEBUG [conexion.py:88] Regresamos la conexion del pool: <connection object at 0x00000292DF598BF0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+10:34:31 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellido: Pena,
+            Email: jpena@gmail.com
+        
+10:34:31 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 2,
+            Nombre: Tito,
+            Apellido: Olate,
+            Email: tolate@gmail.com
+        
+10:34:31 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 8,
+            Nombre: Rowi,
+            Apellido: Costa,
+            Email: rcosts@gmail.com
+        
+10:34:31 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 10,
+            Nombre: Jorge,
+            Apellido: Rolo,
+            Email: jrolo@gmail.com
+        
+10:34:31 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 15,
+            Nombre: Nair,
+            Apellido: Contreras,
+            Email: cnair@gmail.com
+        
+10:34:31 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 18,
+            Nombre: Nico,
+            Apellido: Conte,
+            Email: cnico@gmail.com
+        
+10:34:31 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 19,
+            Nombre: Nicol,
+            Apellido: Contes,
+            Email: cnicol@gmail.com
+        
+10:34:31 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 20,
+            Nombre: Nicol,
+            Apellido: Contes,
+            Email: cnicol@gmail.com
+        
+10:34:31 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 24,
+            Nombre: Omero,
+            Apellido: Ramos,
+            Email: omeror@gmail.com
+        
+10:34:31 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 25,
+            Nombre: Nicol,
+            Apellido: Contes,
+            Email: cnicol@gmail.com
+        
+10:34:31 PM:DEBUG [persona_dao.py:108] 
+            Id Persona: 27,
+            Nombre: Mateo,
+            Apellido: Torres,
+            Email: torresm@gmail.com
+        

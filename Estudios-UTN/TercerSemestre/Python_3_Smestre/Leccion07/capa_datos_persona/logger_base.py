@@ -1,7 +1,7 @@
 # 7.2 Manejo de logging: Parte 1 y 2
 # Clase 07
 import logging as log
-
+# 7.3 Manejo de logging: Parte 2
 # Llamamos una configuración básica
 
 log.basicConfig(level=log.DEBUG,
