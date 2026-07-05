@@ -1,9 +1,9 @@
 /* =========================================================
-   1. RESET GENERAL
-   Quita margenes y rellenos por defecto del navegador.
-   Tambien usa box-sizing para que padding y bordes no rompan
-   el tamano real de los elementos.
-   ========================================================= */
+1. RESET GENERAL
+Quita margenes y rellenos por defecto del navegador.
+Tambien usa box-sizing para que padding y bordes no rompan
+el tamano real de los elementos.
+========================================================= */
 * {
     margin: 0;
     padding: 0;
@@ -12,11 +12,11 @@
 }
 
 /* =========================================================
-   PALETA DE COLORES GDA
-   Estos colores salen del logo: negro profundo, blanco calido
-   y dorados/ambar. Usar variables permite cambiar toda la
-   identidad visual desde un solo lugar.
-   ========================================================= */
+PALETA DE COLORES GDA
+Estos colores salen del logo: negro profundo, blanco calido
+y dorados/ambar. Usar variables permite cambiar toda la
+identidad visual desde un solo lugar.
+========================================================= */
 :root {
     --color-negro: #030303;
     --color-negro-suave: #0b0b0b;
@@ -52,27 +52,28 @@ body {
 header {
     background-color: var(--color-negro);
     color: var(--color-blanco);
-    padding: 18px 20px;
+    padding: 15px 30px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    border-bottom: 1px solid rgba(255, 204, 0, 0.01);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    max-width: 1200px;
+    gap: 40px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .marca-header {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     color: var(--color-blanco);
     text-decoration: none;
     font-weight: 800;
@@ -85,7 +86,30 @@ nav {
     object-fit: cover;
     border: 2px solid var(--color-dorado);
     border-radius: 50%;
-    box-shadow: 0 0 12px var(--sombra-dorada);
+    box-shadow: 0 0 10px var(--sombra-dorada);
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    animation: brilloLogoSutil 1.2s infinite ease-in-out !important;
+} 
+
+.logo-header:hover {
+    transform: scale(1.1) rotate(5deg) !important;
+    box-shadow: 0 0 18px var(--sombra-dorado) !important;
+    cursor: pointer;
+}
+
+@keyframes pulsoLogoFuerte {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 8px var(--sombra-dorada);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px #ffcc00;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 8px var(--sombra-dorada);
+    }
 }
 
 .boton-menu-mobile {
@@ -103,14 +127,21 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
-    gap: 18px;
+    justify-content: flex-end;
+    text-align: right;
+    gap: 14px;
+    row-gap: 12px;
     list-style: none;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 nav ul li a {
     color: var(--color-blanco);
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.95rem;
+    padding: 6px 10px;
     transition: color 0.3s ease;
 }
 
@@ -121,8 +152,18 @@ nav ul li a:hover {
 .boton-login-menu {
     background-color: var(--color-dorado);
     color: var(--color-negro) !important;
-    padding: 7px 14px;
-    border-radius: 5px;
+    padding: 8px 18px !important;
+    border-radius: 20px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+    transition: all 0.3s ease !important;
+}
+
+.boton-login-menu:hover {
+    background-color: var(--color-blanco) !important;
+    color: var(--color-negro) !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
 }
 
 /* =========================================================
@@ -132,10 +173,10 @@ nav ul li a:hover {
    ========================================================= */
 #inicio {
     min-height: 100vh;
-    padding: 110px 20px 70px;
+    padding: 150px 20px 70px;
     background-color: var(--color-negro);
     background-image:
-        radial-gradient(circle at center top, rgba(240, 165, 26, 0.42) 0%, rgba(22, 18, 11, 0.75) 28%, var(--color-negro) 72%),
+        radial-gradient(circle at center top, rgba(240, 165, 26, 0.25) 0%, rgba(22, 18, 11, 0.4) 40%, rgba(0, 0, 0, 0) 80%),
         linear-gradient(180deg, var(--color-negro) 0%, var(--color-carbon) 100%);
     color: var(--color-blanco);
     display: flex;
@@ -157,6 +198,27 @@ nav ul li a:hover {
     max-width: 350px;
     border-radius: 50%;
     box-shadow: 0 0 36px var(--sombra-dorada);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    animation: flotarLogoPrincipal 4s infinite ease-in-out;
+}
+
+.logo-principal:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 50px var(--sombra-dorado);
+    cursor: pointer;
+}
+
+@keyframes flotarLogoPrincipal {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+        box-shadow: 0 15px 45px rgba(240, 165, 26, 0.5);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .lema-iglesia {
@@ -1313,4 +1375,91 @@ footer {
 
 .devocional-oracion strong {
     color: #ffcc00; /* La palabra "Oración:" resalta en dorado */
+}
+
+/* 17. SECCIÓN GENEROSIDAD / OFRENDAS */
+#generosidad {
+    padding: 80px 20px;
+    background-color: #080808; /* Tono casi negro para equilibrar los colores */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-generosidad {
+    max-width: 1100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.generosidad-texto {
+    flex: 1.2;
+    min-width: 300px;
+    text-align: left;
+}
+
+.generosidad-texto h2 {
+    font-size: 2.5rem;
+    color: #ffcc00; /* Dorado oficial */
+    margin-bottom: 15px;
+}
+
+.lema-generosidad {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color: #cccccc;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    border-left: 3px solid #ffcc00; 
+    padding-left: 15px;
+}
+
+.explicacion-generosidad {
+    color: #aaaaaa;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.generosidad-datos {
+    flex: 0.8;
+    min-width: 300px;
+    text-align: left;
+}
+
+.generosidad-datos h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.tarjeta-banco {
+    background-color: #121212; /* Gris oscuro premium */
+    border: 1px solid #ffcc00;   /* Borde dorado fino */
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.05);
+}
+
+.tarjeta-banco p {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    color: #ffffff;
+}
+
+.tarjeta-banco p:last-child {
+    margin-bottom: 0;
+}
+
+.tarjeta-banco strong {
+    color: #ffcc00; 
+}
+
+.nota-banco {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #666666;
+    font-style: italic;
 }
