@@ -1,0 +1,82 @@
+Mini desafio 1:
+
+Sin mirar la explicación, intenta responder estas preguntas:
+
+¿Para qué sirve la carpeta css?
+
+La carpeta de css es donde va a estar guardado todo el estilo 
+del proyecto.
+
+¿Qué archivo abre primero el navegador cuando visitas una página web?
+
+El archivo que se abre primero es el index.html
+
+¿En qué carpeta guardarías el logo de la iglesia?
+
+El logo de la iglesia lo guardaria en la carpeta img.
+
+¿Dónde escribirías el código de JavaScript?
+
+El codigo js lo escribiria en la carpeta js dentro del archivo script.js
+
+Mini desafio 2:
+
+1 ¿Qué hace esta línea?(<!DOCTYPE html>)
+
+_La línea que hace referencia la pregunta le dise al navegador que todo esta 
+subido en lenguaje html5
+
+2 ¿Para qué sirve?(<html lang="es">)
+
+_Esta línea le dise al navegador que toda la pagina esta escrita en español
+
+3¿Qué diferencia hay entre <head> y <body>?
+
+_La diferencia que hay entre el head y el body es que en el head va todo lo que es configuracion
+y en el body va todo lo que que seria el contenido ej: logo, img, footer etc.
+
+Mini desafio 3:
+
+1 ¿Qué etiqueta representa la cabecera de una página?
+
+La etiqueta que representa la cabecera de una pagina es el header
+
+2 ¿Cuál contiene el menú de navegación?
+
+La etiqueta que contiene el menu de navegación el el nav
+
+3 ¿Qué etiqueta contiene el contenido principal?
+
+La etiqueta que contiene el contenido principal es el main
+
+4 ¿Para qué sirve una <section>?
+
+El section sirve para dividir todo el contenido por temas 
+
+5 ¿Qué información suele ir en el <footer>?
+
+Con el footer la informacion que suele ir es el cierre de la pagina como la direccion, telefono, redes sociales y derechos de autor
+
+Mini desafio 4:
+
+1.¿Qué hace la etiqueta <ul>?
+
+La etiqueta ul es una lista desordenada
+
+2.¿Para qué sirve <li>?
+
+la etiqueta li sirve para crear el menú
+
+3.¿Qué hace la etiqueta <a>?
+
+La etiqueta a significa ancla y es para crear un enlace
+
+4.¿Qué significa href?
+
+href no es una etiqueta, es un atributo 
+
+5.¿Qué significa href="#"?
+
+Significa que por el momento no valla a ningun lado 
+
+

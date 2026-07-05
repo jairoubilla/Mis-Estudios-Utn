@@ -1,0 +1,1316 @@
+/* =========================================================
+   1. RESET GENERAL
+   Quita margenes y rellenos por defecto del navegador.
+   Tambien usa box-sizing para que padding y bordes no rompan
+   el tamano real de los elementos.
+   ========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================================================
+   PALETA DE COLORES GDA
+   Estos colores salen del logo: negro profundo, blanco calido
+   y dorados/ambar. Usar variables permite cambiar toda la
+   identidad visual desde un solo lugar.
+   ========================================================= */
+:root {
+    --color-negro: #030303;
+    --color-negro-suave: #0b0b0b;
+    --color-carbon: #16120b;
+    --color-dorado: #f6c34a;
+    --color-dorado-intenso: #f0a51a;
+    --color-ambar: #c97918;
+    --color-blanco: #fffaf0;
+    --color-blanco-puro: #ffffff;
+    --color-crema: #fff4d8;
+    --color-crema-suave: #fff7e6;
+    --color-texto: #241b0f;
+    --color-texto-suave: #6d5a3c;
+    --color-linea: #ead9b2;
+    --sombra-dorada: rgba(246, 195, 74, 0.28);
+    --sombra-oscura: rgba(3, 3, 3, 0.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-texto);
+    background-color: var(--color-blanco);
+}
+
+/* =========================================================
+   2. ENCABEZADO Y MENU DE NAVEGACION
+   El header queda fijo arriba para que el usuario pueda
+   navegar por las secciones aunque haga scroll.
+   ========================================================= */
+header {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    padding: 18px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.marca-header {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.logo-header {
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+    border: 2px solid var(--color-dorado);
+    border-radius: 50%;
+    box-shadow: 0 0 12px var(--sombra-dorada);
+}
+
+.boton-menu-mobile {
+    display: none;
+    background-color: var(--color-dorado);
+    color: var(--color-negro);
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-dorado);
+}
+
+.boton-login-menu {
+    background-color: var(--color-dorado);
+    color: var(--color-negro) !important;
+    padding: 7px 14px;
+    border-radius: 5px;
+}
+
+/* =========================================================
+   3. SECCION INICIO / HERO
+   Pantalla principal del sitio: fondo oscuro, logo destacado,
+   lema y boton de llamada a la accion.
+   ========================================================= */
+#inicio {
+    min-height: 100vh;
+    padding: 110px 20px 70px;
+    background-color: var(--color-negro);
+    background-image:
+        radial-gradient(circle at center top, rgba(240, 165, 26, 0.42) 0%, rgba(22, 18, 11, 0.75) 28%, var(--color-negro) 72%),
+        linear-gradient(180deg, var(--color-negro) 0%, var(--color-carbon) 100%);
+    color: var(--color-blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-contenido {
+    max-width: 760px;
+}
+
+.logo-principal-contenedor {
+    margin-bottom: 25px;
+}
+
+.logo-principal {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 36px var(--sombra-dorada);
+}
+
+.lema-iglesia {
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    color: var(--color-dorado);
+    font-style: italic;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.cita-lema {
+    display: block;
+    color: var(--color-blanco);
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+.boton-bienvenida {
+    display: inline-block;
+    background-color: var(--color-dorado);
+    color: var(--color-negro);
+    padding: 14px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 18px var(--sombra-dorada);
+}
+
+.boton-bienvenida:hover {
+    background-color: var(--color-blanco-puro);
+    transform: scale(1.05);
+    box-shadow: 0 6px 22px rgba(255, 250, 240, 0.36);
+}
+
+/* =========================================================
+   4. ESTILOS GENERALES DE SECCIONES
+   Estos estilos se comparten entre varias partes del sitio
+   para mantener consistencia visual.
+   ========================================================= */
+section {
+    scroll-margin-top: 90px;
+}
+
+#nosotros,
+#ministerios,
+#horarios,
+#avisos,
+#eventos,
+#galeria,
+#contacto {
+    padding: 80px 20px;
+}
+
+#ministerios,
+#eventos {
+    background-color: var(--color-carbon);
+    background-image: linear-gradient(180deg, var(--color-negro-suave) 0%, var(--color-carbon) 100%);
+}
+
+#horarios,
+#galeria,
+#contacto,
+#avisos,
+#nosotros {
+    background-color: var(--color-blanco);
+}
+
+#ministerios,
+#horarios,
+#avisos,
+#eventos,
+#galeria,
+#contacto {
+    text-align: center;
+}
+
+#ministerios h2,
+#horarios h2,
+#avisos h2,
+#eventos h2,
+#galeria h2,
+#contacto h2,
+.nosotros-texto h2 {
+    font-size: 2.5rem;
+    color: var(--color-texto);
+    margin-bottom: 12px;
+}
+
+#ministerios h2,
+#eventos h2 {
+    color: var(--color-dorado);
+}
+
+#ministerios .subtitulo-seccion,
+#eventos .subtitulo-seccion {
+    color: var(--color-blanco);
+}
+
+.subtitulo-seccion {
+    font-size: 1.1rem;
+    color: var(--color-texto-suave);
+    margin: 0 auto 40px;
+    max-width: 650px;
+    line-height: 1.5;
+}
+
+#horarios h2::after,
+#avisos h2::after,
+#galeria h2::after,
+#contacto h2::after,
+.nosotros-texto h2::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 4px;
+    background-color: var(--color-dorado);
+    border-radius: 999px;
+    margin: 12px auto 0;
+}
+
+.nosotros-texto h2::after {
+    margin-left: 0;
+}
+
+/* =========================================================
+   5. SECCION NOSOTROS
+   Usa flexbox para colocar el texto y la imagen lado a lado.
+   En celular se apilan con una media query al final.
+   ========================================================= */
+#nosotros {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-nosotros {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nosotros-texto,
+.nosotros-imagen {
+    flex: 1;
+}
+
+.nosotros-texto p {
+    font-size: 1.1rem;
+    color: var(--color-texto-suave);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.nosotros-imagen {
+    text-align: center;
+}
+
+.nosotros-imagen img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px var(--sombra-oscura);
+}
+
+/* =========================================================
+   6. SECCION MINISTERIOS
+   Las tarjetas se acomodan con CSS Grid. auto-fit permite que
+   el diseno pase de 3 columnas a 2 o 1 segun el ancho.
+   ========================================================= */
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    background-color: var(--color-blanco-puro);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(246, 195, 74, 0.22);
+    box-shadow: 0 4px 14px rgba(3, 3, 3, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(3, 3, 3, 0.26);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tarjeta-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.tarjeta-info h3 {
+    font-size: 1.4rem;
+    color: var(--color-texto);
+    margin-bottom: 10px;
+}
+
+.tarjeta-info p {
+    font-size: 1rem;
+    color: var(--color-texto-suave);
+    line-height: 1.5;
+}
+
+/* =========================================================
+   7. SECCION HORARIOS
+   La tabla muestra reuniones y horarios. El contenedor permite
+   scroll horizontal si la pantalla es muy chica.
+   ========================================================= */
+
+#horarios {
+    padding: 80px 20px;
+    background-color: #000000; /* Fondo negro como el logo */
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Forzamos a que el título principal de horarios brille en dorado */
+#horarios h2 {
+    color: var(--color-dorado);
+    margin-bottom: 10px;
+}
+
+.contenedor-tabla {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(255, 204, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-dorado);
+    color: #000000;
+    font-weight: 700;
+}
+
+tr:nth-child(even) {
+    background-color: #121212;
+}
+
+tr:nth-child(odd) {
+    background-color: #080808; /* Negro casi absoluto */
+}
+
+td {
+    border-bottom: 1px solid #1a1a1a;
+    color: #ffffff;
+}
+
+/* =========================================================
+   8. SECCION AVISOS
+   Presenta avisos importantes de la semana. El aviso principal
+   se puede editar desde el panel de administrador.
+   ========================================================= */
+.contenedor-avisos {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.aviso-principal,
+.aviso-secundario {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: var(--color-blanco-puro);
+    border: 1px solid rgba(246, 195, 74, 0.32);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(3, 3, 3, 0.12);
+    text-align: left;
+}
+
+.aviso-principal {
+    padding: 28px;
+}
+
+.aviso-secundario {
+    padding: 24px;
+}
+
+.icono-aviso,
+.aviso-secundario i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 58px;
+    height: 58px;
+    background-color: var(--color-negro);
+    color: var(--color-dorado);
+    border-radius: 50%;
+    font-size: 1.35rem;
+}
+
+.aviso-principal h3 {
+    color: var(--color-texto);
+    font-size: 1.45rem;
+    margin-bottom: 8px;
+}
+
+.aviso-principal p,
+.aviso-secundario span {
+    color: var(--color-texto-suave);
+    line-height: 1.55;
+}
+
+/* =========================================================
+   9. SECCION EVENTOS
+   Presenta un evento destacado con fecha visual a la izquierda
+   y descripcion a la derecha.
+   ========================================================= */
+.contenedor-eventos {
+    max-width: 800px;
+    margin: 30px auto 0;
+}
+
+.evento-item {
+    display: flex;
+    background-color: var(--color-blanco-puro);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(246, 195, 74, 0.25);
+    box-shadow: 0 6px 18px rgba(3, 3, 3, 0.18);
+    align-items: center;
+}
+
+.evento-fecha {
+    background-color: var(--color-dorado);
+    color: var(--color-negro);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+    font-weight: bold;
+}
+
+.evento-fecha .dia {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.evento-fecha .mes {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.evento-detalle {
+    padding: 20px;
+    text-align: left;
+}
+
+.evento-detalle h3 {
+    margin-bottom: 5px;
+    color: var(--color-texto);
+}
+
+.evento-detalle p {
+    color: var(--color-texto-suave);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* =========================================================
+   10. SECCION GALERIA
+   Grid de imagenes. Cada foto usa object-fit para mantener
+   proporcion sin deformarse.
+   ========================================================= */
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.foto-galeria {
+    overflow: hidden;
+    border-radius: 8px;
+    height: 200px;
+}
+
+.foto-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.foto-galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* =========================================================
+   11. SECCION CONTACTO
+   Divide el formulario y los datos de contacto en dos columnas.
+   Los inputs tienen iconos y estados visuales al hacer focus.
+   ========================================================= */
+.contenedor-contacto {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario-contacto,
+.datos-contacto {
+    flex: 1;
+    min-width: 280px;
+    background-color: var(--color-blanco-puro);
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid rgba(246, 195, 74, 0.28);
+    box-shadow: 0 10px 30px rgba(3, 3, 3, 0.12);
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grupo-contacto {
+    position: relative;
+    width: 100%;
+}
+
+.grupo-contacto label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+.grupo-contacto i {
+    position: absolute;
+    left: 15px;
+    top: 45px;
+    color: var(--color-ambar);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.grupo-contacto input,
+.grupo-contacto textarea {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    background-color: var(--color-crema-suave);
+    color: var(--color-texto);
+    border: 2px solid var(--color-linea);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.grupo-contacto input:focus,
+.grupo-contacto textarea:focus {
+    background-color: var(--color-blanco-puro);
+    border-color: var(--color-dorado);
+    box-shadow: 0 0 8px var(--sombra-dorada);
+}
+
+.grupo-contacto:focus-within i {
+    color: var(--color-dorado-intenso);
+}
+
+.boton-enviar {
+    background-color: var(--color-dorado);
+    color: var(--color-negro);
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.05rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    transform: translateY(-2px);
+}
+
+.datos-contacto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.datos-contacto p {
+    color: var(--color-texto-suave);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.datos-contacto i {
+    color: var(--color-dorado-intenso);
+    margin-right: 6px;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+}
+
+.link-red {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: var(--color-negro);
+    color: var(--color-texto);
+    text-decoration: none;
+    border: 1px solid rgba(246, 195, 74, 0.35);
+    border-radius: 50%;
+    margin: 8px 10px 0 0;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-red i {
+    color: var(--color-dorado);
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.link-red:hover {
+    background-color: var(--color-dorado);
+    transform: translateY(-2px);
+}
+
+.link-red:hover i {
+    color: var(--color-negro);
+}
+
+/* =========================================================
+   12. MODAL DE LOGIN
+   La ventana esta oculta por defecto. Se muestra cuando la URL
+   apunta al id #login-modal usando la pseudo-clase :target.
+   ========================================================= */
+.modal-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(3, 3, 3, 0.82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+}
+
+.modal-fondo:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-caja {
+    background-color: var(--color-blanco-puro);
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 520px;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(246, 195, 74, 0.36);
+    box-shadow: 0 10px 30px rgba(3, 3, 3, 0.36);
+    color: var(--color-texto);
+}
+
+.modal-cerrar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--color-ambar);
+}
+
+.modal-caja h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.modal-caja p {
+    color: var(--color-texto-suave);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.grupo-input {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.grupo-input i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-ambar);
+}
+
+.grupo-input input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid var(--color-linea);
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.grupo-input input:focus {
+    border-color: var(--color-dorado);
+}
+
+.nota-admin {
+    background-color: var(--color-crema-suave);
+    border-left: 4px solid var(--color-dorado);
+    color: var(--color-texto-suave);
+    padding: 10px 12px;
+    margin: 8px 0 12px;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.mensaje-login {
+    min-height: 22px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.mensaje-login.error {
+    color: var(--color-ambar);
+}
+
+.mensaje-login.exito {
+    color: var(--color-dorado-intenso);
+}
+
+.oculto {
+    display: none;
+}
+
+.panel-admin {
+    text-align: left;
+}
+
+.estado-admin {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color-negro);
+    color: var(--color-blanco) !important;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 18px !important;
+}
+
+.estado-admin i {
+    color: var(--color-dorado);
+}
+
+.admin-resumen {
+    background-color: var(--color-crema-suave);
+    border: 1px solid var(--color-linea);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 18px;
+}
+
+.admin-resumen h4 {
+    color: var(--color-texto);
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.admin-resumen ul {
+    list-style: none;
+}
+
+.admin-resumen li {
+    color: var(--color-texto-suave);
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.admin-acciones {
+    display: grid;
+    gap: 10px;
+}
+
+.formulario-admin {
+    display: grid;
+    gap: 10px;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-linea);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.formulario-admin label {
+    color: var(--color-texto);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.formulario-admin input,
+.formulario-admin textarea {
+    width: 100%;
+    border: 1px solid var(--color-linea);
+    border-radius: 6px;
+    padding: 10px;
+    color: var(--color-texto);
+    background-color: var(--color-blanco-puro);
+    font: inherit;
+    resize: vertical;
+}
+
+.formulario-admin input:focus,
+.formulario-admin textarea:focus {
+    outline: none;
+    border-color: var(--color-dorado);
+    box-shadow: 0 0 0 3px var(--sombra-dorada);
+}
+
+.boton-admin {
+    background-color: var(--color-dorado);
+    color: var(--color-negro);
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.boton-admin:hover {
+    background-color: var(--color-dorado-intenso);
+    transform: translateY(-2px);
+}
+
+.boton-cerrar-sesion {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+.boton-secundario-admin {
+    background-color: var(--color-crema);
+    color: var(--color-texto);
+    border: 1px solid var(--color-linea);
+}
+
+.boton-cerrar-sesion:hover {
+    background-color: var(--color-carbon);
+}
+
+.evento-destacado-admin {
+    outline: 3px solid var(--color-dorado);
+    box-shadow: 0 0 26px var(--sombra-dorada);
+}
+
+.boton-ingresar {
+    width: 100%;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.boton-ingresar:hover {
+    background-color: var(--color-dorado);
+    color: var(--color-negro);
+}
+
+/* =========================================================
+   13. FOOTER
+   Pie de pagina con informacion final del sitio.
+   ========================================================= */
+footer {
+    background-color: var(--color-negro);
+    color: var(--color-linea);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(246, 195, 74, 0.25);
+}
+
+/* =========================================================
+   14. RESPONSIVE DESIGN
+   Ajustes para tablets y celulares. El objetivo es que el
+   contenido no se rompa cuando la pantalla es pequena.
+   ========================================================= */
+@media (max-width: 900px) {
+    header {
+        padding: 14px 18px;
+    }
+
+    nav {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .marca-header span {
+        font-size: 1rem;
+    }
+
+    .boton-menu-mobile {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        background-color: var(--color-negro-suave);
+        border: 1px solid rgba(246, 195, 74, 0.25);
+        border-radius: 10px;
+        padding: 12px;
+        margin-top: 12px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+    }
+
+    nav ul.menu-abierto {
+        display: flex;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 12px;
+        border-radius: 6px;
+    }
+
+    nav ul li a:hover {
+        background-color: rgba(246, 195, 74, 0.12);
+    }
+
+    .contenedor-nosotros,
+    .contenedor-contacto {
+        flex-direction: column;
+    }
+
+    .contenedor-avisos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-header {
+        width: 40px;
+        height: 40px;
+    }
+
+    .marca-header span {
+        max-width: 190px;
+        white-space: normal;
+        line-height: 1.15;
+    }
+
+    #inicio {
+        padding-top: 120px;
+    }
+
+    .lema-iglesia {
+        font-size: 1.35rem;
+    }
+
+    #ministerios h2,
+    #horarios h2,
+    #avisos h2,
+    #eventos h2,
+    #galeria h2,
+    #contacto h2,
+    .nosotros-texto h2 {
+        font-size: 2rem;
+    }
+
+    .evento-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .evento-fecha {
+        width: 100%;
+    }
+
+    .evento-detalle {
+        text-align: center;
+    }
+
+    .aviso-principal,
+    .aviso-secundario {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .modal-caja {
+        padding: 32px 22px;
+    }
+}
+
+/* 15. SECCIÓN ESTUDIOS BÍBLICOS */
+#estudios {
+    padding: 80px 20px;
+    background-color: #000000; /* Negro absoluto del logo */
+    text-align: center;
+}
+
+#estudios h2 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Título de la sección en blanco */
+    margin-bottom: 10px;
+}
+
+.contenedor-estudios {
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;              
+}
+
+.estudio-item {
+    background-color: #111111; /* ¡CAMBIADO! Ahora la tarjeta es gris oscura muy elegante */
+    border-left: 5px solid #ffcc00; 
+    border-radius: 0 8px 8px 0;    
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(255, 204, 0, 0.05); /* Sombra con un levísimo brillo dorado */
+    transition: transform 0.2s;
+}
+
+.estudio-item:hover {
+    transform: translateX(5px); 
+}
+
+.estudio-encabezado {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.estudio-serie {
+    color: #ffcc00; 
+}
+
+.estudio-fecha {
+    color: #ffffff;            /* ¡CAMBIADO! Letra blanca para la fecha */
+    background-color: #222222; /* ¡CAMBIADO! Fondo de la cápsula de fecha más oscuro */
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.estudio-item h3 {
+    font-size: 1.6rem;
+    color: #ffcc00; /* ¡CAMBIADO! El título de la lección ahora brilla en el dorado del logo */
+    margin-bottom: 15px;
+}
+
+/* Cuadro destacado para el versículo bíblico */
+.estudio-versiculo {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    background-color: #1a1505; /* ¡CAMBIADO! Un fondo café/dorado oscuro muy sutil para que resalte */
+    color: #ffffff;            
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    border-right: 3px solid #ffcc00; 
+}
+
+.estudio-resumen {
+    color: #cccccc; /* ¡CAMBIADO! Un blanco grisáceo para que el resumen se lea cómodo en la oscuridad */
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Botón para descargar el PDF adaptado a la oscuridad */
+.boton-estudio {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffcc00;                /* ¡CAMBIADO! Letras doradas */
+    border: 2px solid #ffcc00;     /* ¡CAMBIADO! Borde dorado */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.boton-estudio i {
+    margin-right: 8px;
+    color: #ffcc00; 
+}
+
+.boton-estudio:hover {
+    background-color: #ffcc00; /* ¡CAMBIADO! Al pasar el mouse se rellena de dorado */
+    color: #000000;            /* Y las letras pasan a negro absoluto */
+}
+
+/* 16. SECCIÓN DEVOCIONALES DIARIOS */
+#devocionales {
+    padding: 80px 20px;
+    background-color: #f4f6f7; /* Fondo gris suave para que contrasten las tarjetas */
+    text-align: center;
+}
+
+#devocionales h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.contenedor-devocionales {
+    display: grid;
+    /* Divide la pantalla en dos columnas si hay espacio, o una sola en el cel */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+}
+
+.devocional-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    position: relative; /* Nos permite acomodar el círculo del día de forma libre */
+    transition: transform 0.3s ease;
+    border-top: 4px solid #1a1a1a; /* Techo negro elegante */
+}
+
+.devocional-card:hover {
+    transform: translateY(-5px);
+}
+
+/* El círculo dorado del Día */
+.devocional-dia {
+    display: inline-block;
+    background-color: #ffcc00; /* Dorado oficial GDA */
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.devocional-card h3 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+/* El pasaje bíblico para leer */
+.devocional-pasaje {
+    display: block;
+    color: #ffcc00;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.devocional-pasaje i {
+    margin-right: 5px;
+}
+
+.devocional-texto {
+    color: #444444;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Caja de la oración del día - Estética GDA */
+.devocional-oracion {
+    background-color: #1a1a1a; /* Fondo negro como el logo */
+    color: #ffffff;            /* Letras blancas */
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border-left: 3px solid #ffcc00; /* Detalle dorado al costado */
+}
+
+.devocional-oracion strong {
+    color: #ffcc00; /* La palabra "Oración:" resalta en dorado */
+}
