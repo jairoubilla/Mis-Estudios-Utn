@@ -1463,3 +1463,22 @@ footer {
     color: #666666;
     font-style: italic;
 }
+
+.boton-ver-mas {
+    background-color: transparent;
+    color: var(--color-dorado);
+    border: 1px solid var(--color-dorado);
+    padding: 8px 16px;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; /* Ocupa el ancho de la tarjeta para que sea fácil presionar */
+}
+
+.boton-ver-mas:hover {
+    background-color: var(--color-dorado);
+    color: var(--color-negro);
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+}
