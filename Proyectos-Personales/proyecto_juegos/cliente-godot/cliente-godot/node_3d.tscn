@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://88begxp5v30q"]
+
+[ext_resource type="Script" uid="uid://djk8fnialdybd" path="res://network_manager.gd" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://ycyvki8ch1x2" path="res://jugador.tscn" id="2_noarx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7xgmv"]
+bg_color = Color(1, 0, 0, 1)
+
+[node name="Node3D" type="Node3D" unique_id=1512178340]
+
+[node name="NetworkManager" type="Node" parent="." unique_id=950184257]
+script = ExtResource("1_a202f")
+
+[node name="UI" type="CanvasLayer" parent="NetworkManager" unique_id=438981655]
+
+[node name="InputNombre" type="LineEdit" parent="NetworkManager/UI" unique_id=1751262776]
+offset_left = 479.0
+offset_top = 382.0
+offset_right = 661.0
+offset_bottom = 440.0
+placeholder_text = "Ingresá tu nombre"
+
+[node name="BotonEntrar" type="Button" parent="NetworkManager/UI" unique_id=132334405]
+offset_left = 477.0
+offset_top = 461.0
+offset_right = 660.0
+offset_bottom = 519.0
+text = "Entrar"
+
+[node name="InterfazJuego" type="CanvasLayer" parent="NetworkManager" unique_id=106836421]
+
+[node name="HistorialChat" type="RichTextLabel" parent="NetworkManager/InterfazJuego" unique_id=844764727]
+offset_left = 16.0
+offset_top = 515.0
+offset_right = 256.0
+offset_bottom = 591.0
+
+[node name="InputChat" type="LineEdit" parent="NetworkManager/InterfazJuego" unique_id=1748604270]
+offset_left = 11.0
+offset_top = 597.0
+offset_right = 256.0
+offset_bottom = 645.0
+
+[node name="BarraVida" type="ProgressBar" parent="NetworkManager/InterfazJuego" unique_id=1023935096]
+offset_right = 215.0
+offset_bottom = 18.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_7xgmv")
+value = 100.0
+show_percentage = false
+
+[node name="Jugador" parent="." unique_id=710950290 instance=ExtResource("2_noarx")]
+position = Vector2(331, 456)

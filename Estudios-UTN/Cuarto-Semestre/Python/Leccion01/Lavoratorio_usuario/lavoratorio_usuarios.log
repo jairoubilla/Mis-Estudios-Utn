@@ -1,0 +1,84 @@
+07:42:20 PM: DEBUG [conexion.py:30] Creación exitosa del pool. Conexiones: 1 a 5
+07:42:20 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+07:42:20 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+07:42:20 PM: DEBUG [conexion.py:50] Se cerraron todas las conexiones del pool
+08:20:21 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+08:20:22 PM: DEBUG [conexion.py:30] Creación exitosa del pool. Conexiones: 1 a 5
+08:20:22 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+08:20:22 PM: DEBUG [CursorDelPool.py:31] Dentro del bloque with
+08:20:22 PM: DEBUG [CursorDelPool.py:33] [(1, 'admin', 'admin321')]
+08:20:22 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+08:20:22 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+08:20:22 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+09:30:59 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+09:30:59 PM: DEBUG [conexion.py:30] Creación exitosa del pool. Conexiones: 1 a 5
+09:30:59 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+09:30:59 PM: DEBUG [UsuarioDao.py:29] Usuario insertado exitosamente: Usuario: [ID: None, Username: jairo_dev, Password: pwd_segura]
+09:30:59 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+09:30:59 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+09:30:59 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+09:30:59 PM: DEBUG [UsuarioDao.py:53] Usuarios insertados: 1
+09:33:26 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+09:33:26 PM: DEBUG [conexion.py:30] Creación exitosa del pool. Conexiones: 1 a 5
+09:33:26 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+09:33:26 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+09:33:26 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+09:33:26 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+09:33:26 PM: DEBUG [UsuarioDao.py:58] Usuario: [ID: 1, Username: admin, Password: admin321]
+09:33:26 PM: DEBUG [UsuarioDao.py:58] Usuario: [ID: 2, Username: jairo_dev, Password: pwd_segura]
+02:16:51 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+02:16:51 PM: DEBUG [conexion.py:30] Creación exitosa del pool. Conexiones: 1 a 5
+02:16:51 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+02:16:51 PM: DEBUG [UsuarioDao.py:37] Usuario actualizado exitosamente: Usuario: [ID: 1, Username: admin_modificado, Password: nueva_password_456]
+02:16:51 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+02:16:51 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+02:16:51 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+02:16:51 PM: DEBUG [UsuarioDao.py:63] Registros actualizados: 1
+02:21:32 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+02:21:33 PM: DEBUG [conexion.py:30] Creación exitosa del pool. Conexiones: 1 a 5
+02:21:33 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+02:21:33 PM: DEBUG [UsuarioDao.py:45] Usuario eliminado exitosamente: Usuario: [ID: 2, Username: None, Password: None]
+02:21:33 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+02:21:33 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+02:21:33 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+02:21:33 PM: DEBUG [UsuarioDao.py:68] Registros eliminados: 1
+02:22:16 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+02:22:16 PM: DEBUG [conexion.py:30] Creación exitosa del pool. Conexiones: 1 a 5
+02:22:16 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+02:22:16 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+02:22:16 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+02:22:16 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+02:22:16 PM: DEBUG [UsuarioDao.py:58] Usuario: [ID: 1, Username: admin_modificado, Password: nueva_password_456]
+03:21:20 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+03:21:20 PM: DEBUG [conexion.py:30] Creación exitosa del pool. Conexiones: 1 a 5
+03:21:20 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+03:21:20 PM: DEBUG [UsuarioDao.py:29] Usuario insertado exitosamente: Usuario: [ID: None, Username: Juan Lopez, Password: 7890]
+03:21:20 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+03:21:20 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+03:21:20 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+03:21:20 PM: INFO [MenuAppUsuario.py:34] Usuarios insertados: 1
+03:22:35 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+03:22:35 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+03:22:35 PM: DEBUG [UsuarioDao.py:37] Usuario actualizado exitosamente: Usuario: [ID: 3, Username: Julian Lara, Password: 0987]
+03:22:35 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+03:22:35 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+03:22:35 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+03:22:35 PM: INFO [MenuAppUsuario.py:44] Usuarios actualizados: 1
+03:23:46 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+03:23:46 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+03:23:46 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+03:23:46 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+03:23:46 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+03:23:46 PM: INFO [MenuAppUsuario.py:23] --- LISTADO DE USUARIOS ---
+03:23:46 PM: INFO [MenuAppUsuario.py:25] Usuario: [ID: 1, Username: admin_modificado, Password: nueva_password_456]
+03:23:46 PM: INFO [MenuAppUsuario.py:25] Usuario: [ID: 3, Username: Julian Lara, Password: 0987]
+03:24:07 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+03:24:07 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+03:24:07 PM: DEBUG [UsuarioDao.py:45] Usuario eliminado exitosamente: Usuario: [ID: 3, Username: None, Password: None]
+03:24:07 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+03:24:07 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+03:24:07 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+03:24:07 PM: INFO [MenuAppUsuario.py:52] Usuarios eliminados: 1
+03:24:27 PM: ERROR [MenuAppUsuario.py:61] Error de entrada. Debes introducir un valor numérico válido. Detalle: invalid literal for int() with base 10: 'a'
+03:24:55 PM: ERROR [MenuAppUsuario.py:61] Error de entrada. Debes introducir un valor numérico válido. Detalle: invalid literal for int() with base 10: 'f'
+03:25:18 PM: INFO [MenuAppUsuario.py:55] Saliendo de la aplicación. Sistema finalizado.

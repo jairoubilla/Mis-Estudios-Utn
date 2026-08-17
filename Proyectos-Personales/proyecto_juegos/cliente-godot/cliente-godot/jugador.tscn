@@ -1,0 +1,217 @@
+[gd_scene format=3 uid="uid://ycyvki8ch1x2"]
+
+[ext_resource type="Texture2D" uid="uid://c4jfw2kfb5rgl" path="res://Idle.png" id="1_16k11"]
+[ext_resource type="Texture2D" uid="uid://bftnjoljhna6j" path="res://Attack1.png" id="1_omvyu"]
+[ext_resource type="Texture2D" uid="uid://k1dmacd8g36g" path="res://Attack2.png" id="2_8o684"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o2m60"]
+atlas = ExtResource("1_omvyu")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hcpjn"]
+atlas = ExtResource("1_omvyu")
+region = Rect2(200, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwd11"]
+atlas = ExtResource("1_omvyu")
+region = Rect2(400, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bpxwk"]
+atlas = ExtResource("1_omvyu")
+region = Rect2(600, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e6m2u"]
+atlas = ExtResource("1_omvyu")
+region = Rect2(800, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pn0r8"]
+atlas = ExtResource("1_omvyu")
+region = Rect2(1000, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75jh1"]
+atlas = ExtResource("2_8o684")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j66dm"]
+atlas = ExtResource("2_8o684")
+region = Rect2(200, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7qlc"]
+atlas = ExtResource("2_8o684")
+region = Rect2(400, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xqlm"]
+atlas = ExtResource("2_8o684")
+region = Rect2(600, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hns4q"]
+atlas = ExtResource("2_8o684")
+region = Rect2(800, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4g2as"]
+atlas = ExtResource("2_8o684")
+region = Rect2(1000, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omvyu"]
+atlas = ExtResource("1_16k11")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8o684"]
+atlas = ExtResource("1_16k11")
+region = Rect2(200, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukil5"]
+atlas = ExtResource("1_16k11")
+region = Rect2(400, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7st5j"]
+atlas = ExtResource("1_16k11")
+region = Rect2(600, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvhml"]
+atlas = ExtResource("1_16k11")
+region = Rect2(800, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btb33"]
+atlas = ExtResource("1_16k11")
+region = Rect2(1000, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qw2bf"]
+atlas = ExtResource("1_16k11")
+region = Rect2(1200, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5h5a"]
+atlas = ExtResource("1_16k11")
+region = Rect2(1400, 0, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a202f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o2m60")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hcpjn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwd11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bpxwk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e6m2u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pn0r8")
+}],
+"loop": 0,
+"name": &"atacar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_75jh1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j66dm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7qlc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xqlm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hns4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4g2as")
+}],
+"loop": 0,
+"name": &"atacar2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omvyu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8o684")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukil5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7st5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvhml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btb33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qw2bf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5h5a")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k00je"]
+size = Vector2(441, 224)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r8bkr"]
+size = Vector2(421, 139)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dif8e"]
+bg_color = Color(4.8882796e-09, 0, 0.011752414, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e3tcd"]
+bg_color = Color(0.9607843, 0, 0.015686275, 1)
+
+[node name="Jugador" type="Node2D" unique_id=710950290]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1690648493]
+texture_filter = 1
+position = Vector2(-693, -151)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_a202f")
+animation = &"atacar2"
+autoplay = "default"
+frame = 5
+frame_progress = 1.0
+
+[node name="Cuerpo" type="Area2D" parent="." unique_id=427868305]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cuerpo" unique_id=649065236]
+position = Vector2(-558.5, -147)
+shape = SubResource("RectangleShape2D_k00je")
+
+[node name="Espada" type="Area2D" parent="." unique_id=2085203249]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Espada" unique_id=1888137391]
+position = Vector2(-548.5, -147.5)
+shape = SubResource("RectangleShape2D_r8bkr")
+disabled = true
+
+[node name="BarraFlotante" type="ProgressBar" parent="." unique_id=2039781338]
+offset_left = -736.0
+offset_top = -277.0
+offset_right = -680.0
+offset_bottom = -272.0
+theme_override_styles/background = SubResource("StyleBoxFlat_dif8e")
+theme_override_styles/fill = SubResource("StyleBoxFlat_e3tcd")
+value = 100.0
+show_percentage = false
+
+[node name="EtiquetaNombre" type="Label" parent="." unique_id=334369612]
+offset_left = -765.0
+offset_top = -321.0
+offset_right = -420.0
+offset_bottom = -298.0
+horizontal_alignment = 1
