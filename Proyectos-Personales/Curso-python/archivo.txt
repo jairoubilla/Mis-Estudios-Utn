@@ -1,0 +1,81 @@
+                                   Plan de estudio y reglas de la clase
+
+📐 Estándar PEP 8: El código desordenado es inaceptable. Todo script debe cumplir estrictamente con las convenciones de estilo de Python y estar rigurosamente documentado con Docstrings. Si no lo hace, su entrega será rechazada de inmediato.
+
+🧠 Independencia Resolutiva: Jamás le entregaré la solución completa a un problema en la primera revisión. Evaluaremos funcionalidad, eficiencia y seguridad. Si falla, le señalaré dónde y por qué, pero usted mismo depurará y escribirá la corrección.
+
+🛡️ Ética Estricta: Cuando lleguemos a los módulos de ciberseguridad, deberá confirmar explícitamente que todo escaneo o prueba de penetración se hará única y exclusivamente en sus propios entornos virtuales aislados (localhost).
+
+
+Nuestro plan de estudios maestro constará de las siguientes fases:
+
+Fundamentos Rigurosos: Lógica, sintaxis, estructuras de control y de datos.
+
+Paradigmas: Programación Orientada a Objetos y Funcional.
+
+Ecosistema Profesional: Entornos virtuales, Git, bases de datos (SQL/NoSQL) y frameworks backend.
+
+Desarrollo de Videojuegos: Matemáticas aplicadas y motores de juego.
+
+Ciberseguridad y Hacking Ético: Redes, sockets, Scapy y criptografía.
+
+
+Iniciamos la Fase 1: Fundamentos Rigurosos.
+
+[TEORÍA AVANZADA]
+
+En ciencias de la computación, un programa opera asignando, almacenando y transformando datos en la memoria. Python es un lenguaje de tipado dinámico y fuertemente tipado.
+
+ ° Tipado dinámico: No es necesario declarar el tipo de dato que contendrá una variable al crearla; su tipo se determina en tiempo de ejecución.
+
+ ° Fuertemente tipado: El lenguaje no permite tratar a una variable como si fuera de un tipo distinto al que tiene sin una conversión explícita. Intentar sumar  texto y números sin conversión causará un error crítico.
+  
+Los tipos de datos básicos fundamentales en Python son:
+
+  1. Números: int (enteros sin decimales) y float (reales o de coma flotante).
+  
+  2. Cadenas de texto (str): Secuencias de caracteres encerradas entre comillas simples o dobles.
+  
+  3. Booleanos (bool): Valores lógicos que solo pueden ser True (cierto) o False (falso).
+  
+Ejemplo mínimo viable (observe la sintaxis, el espaciado y el uso estricto de Docstrings):
+    
+    Python
+    
+    def inicializar_sistema():
+        """
+        Inicializa las variables del sistema y demuestra los tipos de datos básicos.
+        """
+        nivel_seguridad = 5          # Tipo: int
+        tasa_encriptacion = 1.25     # Tipo: float
+        estado_activo = True         # Tipo: bool
+        nombre_proceso = "Kernel"    # Tipo: str
+
+[EJERCICIO DE LABORATORIO]
+
+Para asimilar la sintaxis y la asignación en memoria, resuelva lo siguiente:
+
+1. Declare cuatro variables, una para cada tipo de dato básico (int, float, str, bool), representando los atributos de un servidor hipotético (por ejemplo: puerto, latencia, direccion_ip, en_linea).
+
+2. Utilice la función nativa type() para imprimir por consola el tipo de dato de cada una de sus variables e inspeccionar cómo Python las asignó en memoria.  
+
+3. Intente concatenar (usando el operador +) su variable str con su variable int e imprima el resultado. Observe el error generado y analice por qué ocurre basándose en el concepto de tipado fuerte.
+
+[PROYECTO DEL MUNDO REAL]
+
+Sistema de Registro de Cadetes (Fase Alpha)
+Desarrolle un script en Python que simule la creación de un perfil para un nuevo usuario del sistema.
+
+° Requisitos técnicos:
+
+   ° Defina variables fijas en el código para: nombre del cadete, edad actual, código de identificación (texto), y un valor booleano que indique si su acceso es nivel administrador.
+
+   ° Realice una operación matemática: calcule el año en el que el cadete cumplirá 80 años (asuma el año actual como 2026).
+
+   ° Imprima un reporte estructurado por consola mostrando todos los datos almacenados y el año calculado.
+
+   ° El código debe cumplir estrictamente con PEP 8 y estar documentado con Docstrings.
+
+[CODE REVIEW]
+
+Entregue su código para el proyecto. Lo someteré a escrutinio evaluando funcionalidad, eficiencia, seguridad y estilo.
