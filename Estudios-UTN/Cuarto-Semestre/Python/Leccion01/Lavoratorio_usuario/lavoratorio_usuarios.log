@@ -82,3 +82,50 @@
 03:24:27 PM: ERROR [MenuAppUsuario.py:61] Error de entrada. Debes introducir un valor numérico válido. Detalle: invalid literal for int() with base 10: 'a'
 03:24:55 PM: ERROR [MenuAppUsuario.py:61] Error de entrada. Debes introducir un valor numérico válido. Detalle: invalid literal for int() with base 10: 'f'
 03:25:18 PM: INFO [MenuAppUsuario.py:55] Saliendo de la aplicación. Sistema finalizado.
+10:32:32 PM: ERROR [MenuAppUsuario.py:61] Error de entrada. Debes introducir un valor numérico válido. Detalle: invalid literal for int() with base 10: 'ii'
+10:33:19 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+10:33:20 PM: DEBUG [conexion.py:30] Creación exitosa del pool. Conexiones: 1 a 5
+10:33:20 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+10:33:20 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+10:33:20 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+10:33:20 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+10:33:20 PM: INFO [MenuAppUsuario.py:23] --- LISTADO DE USUARIOS ---
+10:33:20 PM: INFO [MenuAppUsuario.py:25] Usuario: [ID: 1, Username: admin_modificado, Password: nueva_password_456]
+10:33:45 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+10:33:45 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+10:33:45 PM: DEBUG [UsuarioDao.py:29] Usuario insertado exitosamente: Usuario: [ID: None, Username: lino, Password: porro]
+10:33:45 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+10:33:45 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+10:33:45 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+10:33:45 PM: INFO [MenuAppUsuario.py:34] Usuarios insertados: 1
+10:34:00 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+10:34:00 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+10:34:00 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+10:34:00 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+10:34:00 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+10:34:00 PM: INFO [MenuAppUsuario.py:23] --- LISTADO DE USUARIOS ---
+10:34:00 PM: INFO [MenuAppUsuario.py:25] Usuario: [ID: 1, Username: admin_modificado, Password: nueva_password_456]
+10:34:00 PM: INFO [MenuAppUsuario.py:25] Usuario: [ID: 4, Username: lino, Password: porro]
+10:34:43 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+10:34:43 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+10:34:43 PM: DEBUG [UsuarioDao.py:37] Usuario actualizado exitosamente: Usuario: [ID: 4, Username: pedro, Password: 09890]
+10:34:43 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+10:34:43 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+10:34:43 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+10:34:43 PM: INFO [MenuAppUsuario.py:44] Usuarios actualizados: 1
+10:36:23 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+10:36:23 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+10:36:23 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+10:36:23 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+10:36:23 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+10:36:23 PM: INFO [MenuAppUsuario.py:23] --- LISTADO DE USUARIOS ---
+10:36:23 PM: INFO [MenuAppUsuario.py:25] Usuario: [ID: 1, Username: admin_modificado, Password: nueva_password_456]
+10:36:23 PM: INFO [MenuAppUsuario.py:25] Usuario: [ID: 4, Username: pedro, Password: 09890]
+10:36:32 PM: DEBUG [CursorDelPool.py:10] Inicio del bloque with, método __enter__
+10:36:32 PM: DEBUG [conexion.py:39] Conexion obtenida del pool
+10:36:32 PM: DEBUG [UsuarioDao.py:45] Usuario eliminado exitosamente: Usuario: [ID: 4, Username: None, Password: None]
+10:36:32 PM: DEBUG [CursorDelPool.py:16] Se ejecuta método __exit__
+10:36:32 PM: DEBUG [CursorDelPool.py:23] Commit de la transacción
+10:36:32 PM: DEBUG [conexion.py:45] Conexion regresada al pool
+10:36:32 PM: INFO [MenuAppUsuario.py:52] Usuarios eliminados: 1
+10:37:05 PM: INFO [MenuAppUsuario.py:55] Saliendo de la aplicación. Sistema finalizado.
