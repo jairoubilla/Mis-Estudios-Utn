@@ -22,6 +22,7 @@ export const signin = async (req, res) => {
         console.log(result);
         res.cookie('token', token, { 
             httpOnly: true, 
+            secure: true,
             sameSite: 'none',
             maxAge: 60 * 60 * 24 * 1000,}) // 1 day))
     return res.json(result.rows[0]);
@@ -44,6 +45,7 @@ export const signup = async (req, res) => {
         console.log(result);
         res.cookie('token', token, { 
             httpOnly: true, 
+            secure: true,
             sameSite: 'none',
             maxAge: 60 * 60 * 24 * 1000,}) // 1 day))
         return res.json(result.rows[0]);

@@ -1,8 +1,49 @@
-import React from 'react'
+import { Input } from '../components/ui/input'
+import {Card} from '../components/ui/Card'
+import {Button} from '../components/ui/Button'
+import { Label } from '../components/ui/Label'
+import { Link, useNavigate } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
+import { useAuth } from '../context/AuthContext'
+
 
 function LoginPage() {
+  const {register, handleSubmit} = useForm();
+  const {signin, errors} = useAuth();
+  const navigate = useNavigate();
+  const onSubmit = handleSubmit(async(data) => {
+    const user = await signin(data);
+    if (user) {
+      navigate("/perfil");
+    }
+    
+  });
+
   return (
-    <div>LoginPage</div>
+    <div className="h-[calc(100vh-64px)] flex items-center justify-center">
+      <Card>
+
+        {errors && errors.map((error) => (
+          <p className='bg-red-500 text-white p-2'>{error}</p>
+        ))
+        }
+
+        <h1 className="text-4xl font-bold my-2 text-center">Iniciar Sesion</h1>
+
+        <form onSubmit={onSubmit}>
+          <Label htmlFor="email">Email</Label>
+          <Input id="email" placeholder= "Ingrese su email" {...register("email", {required: true})}></Input>
+
+          <Label htmlFor="password">Contraseña</Label>
+          <Input id="password" placeholder= "Ingrese su contraseña" {...register("password", {required: true})}></Input>
+          <Button>Ingresar</Button>
+        </form>
+        <div className='flex justify-between my-4'>
+          <p>¿No tienes cuenta?</p>
+          <Link to="/register">Registrate</Link>
+        </div>
+      </Card>
+    </div>
   )
 }
 
