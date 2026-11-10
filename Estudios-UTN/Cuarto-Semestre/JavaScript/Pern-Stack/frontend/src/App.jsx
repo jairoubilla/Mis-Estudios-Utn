@@ -1,4 +1,8 @@
+import Navbar from "./components/navbar/Navbar";
+import { Container } from "./components/ui";
+
 import {Routes, Route} from "react-router-dom";
+
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import LoginPage from "./pages/LoginPage";
@@ -11,6 +15,9 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
+    <>
+    <Navbar/>
+    <Container className="py-5">
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
@@ -23,6 +30,8 @@ function App() {
       <Route path="/tareas/editar/:id" element={<TareaFormPage/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
+    </Container>
+    </>
   )
 }
 
